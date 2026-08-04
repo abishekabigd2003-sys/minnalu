@@ -5,7 +5,7 @@ export const MEMORIES = [
     subtitle: "அவள் காதலில்",
     date: "The Day at the Museum",
     hint: "Scratch to unlock our magical beginning...",
-    image: "/images/memory1.jpg",
+    image: `${import.meta.env.BASE_URL}images/memory1.jpg`,
     quote: "Minnalu... do you remember this photo? It was the day our college took us to the museum... the day everything quietly began.",
     storyNote: [
       "Minnalu... do you remember this photo?",
@@ -20,9 +20,9 @@ export const MEMORIES = [
     ],
     songTitle: "Oh Shala Oh Shala",
     songArtist: "Yuvan Shankar Raja (Kaadhal Solla Vandhen)",
-    songUrl: "/audio/Oh-Shala.mp3",
+    songUrl: `${import.meta.env.BASE_URL}audio/Oh-Shala.mp3`,
     amazonMusicUrl: "https://music.amazon.in/tracks/B01N184VRU",
-    albumArt: "/images/memory1.jpg"
+    albumArt: `${import.meta.env.BASE_URL}images/memory1.jpg`
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const MEMORIES = [
     subtitle: "அழகிய நினைவுகள்",
     date: "College Function & Terrace Memories",
     hint: "Scratch to reveal our secret memory...",
-    image: "/images/memory2.jpg",
+    image: `${import.meta.env.BASE_URL}images/memory2.jpg`,
     quote: "My Minnal... ❤️ You came wearing this outfit, and the moment I saw you, I couldn't take my eyes off you.",
     storyNote: [
       "My Minnal... ❤️",
@@ -42,9 +42,9 @@ export const MEMORIES = [
     ],
     songTitle: "Pesamaale",
     songArtist: "Yuvan Shankar Raja (pesamamale - djbaap)",
-    songUrl: "/audio/pesamale.mp3",
+    songUrl: `${import.meta.env.BASE_URL}audio/pesamale.mp3`,
     amazonMusicUrl: "https://music.amazon.in/tracks/B01N184VRU",
-    albumArt: "/images/memory2.jpg"
+    albumArt: `${import.meta.env.BASE_URL}images/memory2.jpg`
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const MEMORIES = [
     subtitle: "பயணங்கள் முடிவதில்லை",
     date: "Children's Park Trip",
     hint: "Scratch to unveil our secret trip memory...",
-    image: "/images/memory3.jpg",
+    image: `${import.meta.env.BASE_URL}images/memory3.jpg`,
     quote: "Even today, whenever I look at this photo, I don't just remember the park—I remember your smile, our laughter, and how happy I was spending that day with you. These are the moments I truly miss the most. ❤️",
     storyNote: [
       "Minnale... ❤️",
@@ -64,9 +64,9 @@ export const MEMORIES = [
     ],
     songTitle: "En Rojaa Neeye",
     songArtist: "Hesham Abdul Wahab & Sid Sriram (Kushi)",
-    songUrl: "/audio/en-rojaa-neeye.mp3",
+    songUrl: `${import.meta.env.BASE_URL}audio/en-rojaa-neeye.mp3`,
     amazonMusicUrl: "https://music.amazon.in/search/En+Rojaa+Neeye",
-    albumArt: "/images/memory3.jpg"
+    albumArt: `${import.meta.env.BASE_URL}images/memory3.jpg`
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ export const MEMORIES = [
     subtitle: "Lightning Angel",
     date: "A Special Memory ❤️",
     hint: "Scratch to unveil our Minnal Devathaiye memory...",
-    image: "/images/memory4.jpg",
+    image: `${import.meta.env.BASE_URL}images/memory4.jpg`,
     quote: "I kept wondering what I should write as a description for you, but no words ever felt enough... So instead of writing a description, I'll let this song speak for my love. ❤️🎵✨",
     storyNote: [
       "💖 I kept wondering what I should write as a description for you, but no words ever felt enough. 🥹✨ Then I found this song, and it says everything I've been trying to tell you. 🎶❤️",
@@ -83,9 +83,9 @@ export const MEMORIES = [
     ],
     songTitle: "Aiyo Kaadhaley",
     songArtist: "Aiyo Kaadhaley - Special Memory",
-    songUrl: "/audio/aiyo-kadhaley.mp3",
+    songUrl: `${import.meta.env.BASE_URL}audio/aiyo-kadhaley.mp3`,
     amazonMusicUrl: "https://music.amazon.in/search/Aiyo+Kaadhaley",
-    albumArt: "/images/memory4.jpg"
+    albumArt: `${import.meta.env.BASE_URL}images/memory4.jpg`
   },
   {
     id: 5,
@@ -93,7 +93,7 @@ export const MEMORIES = [
     date: "Every Moment & Forever",
     hint: "Scratch to unveil the heartbeat of our love...",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
-    videoUrl: "/videos/VID20250311124156_compressed.mp4",
+    videoUrl: `${import.meta.env.BASE_URL}videos/VID20250311124156_compressed.mp4`,
     isVideo: true,
     quote: "Happy Birthday, My Minnalu. This isn't just a video... it's one of the most beautiful memories we've created together. ❤️✨",
     storyNote: [
@@ -107,7 +107,7 @@ export const MEMORIES = [
     ],
     songTitle: "Idhayam Karaigiradhe",
     songArtist: "Idhayam Karaigiradhe",
-    songUrl: "/audio/Idhayam-Karaikirathe.mp3",
+    songUrl: `${import.meta.env.BASE_URL}audio/Idhayam-Karaikirathe.mp3`,
     amazonMusicUrl: "https://music.amazon.in/search/Idhayam+Karaigiradhe",
     albumArt: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=300&auto=format&fit=crop"
   }

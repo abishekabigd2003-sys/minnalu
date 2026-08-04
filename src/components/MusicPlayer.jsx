@@ -94,7 +94,7 @@ const MusicPlayer = ({ songTitle, songArtist, songUrl, amazonMusicUrl, albumArt,
           className="relative w-14 h-14 rounded-2xl overflow-hidden border border-gold/40 hover:border-gold shadow-lg flex-shrink-0 cursor-pointer transition-all hover:scale-105"
         >
           <img
-            src={albumArt || "/images/memory1.jpg"}
+            src={albumArt || `${import.meta.env.BASE_URL}images/memory1.jpg`}
             alt="Album Art"
             className={`w-full h-full object-cover ${isThisSongPlaying ? 'animate-spin-slow' : ''}`}
           />
