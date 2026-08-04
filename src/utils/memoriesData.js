@@ -93,7 +93,7 @@ export const MEMORIES = [
     date: "Every Moment & Forever",
     hint: "Scratch to unveil the heartbeat of our love...",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
-    videoUrl: "/videos/VID20250311124156.mp4",
+    videoUrl: "/videos/VID20250311124156_compressed.mp4",
     isVideo: true,
     quote: "Happy Birthday, My Minnalu. This isn't just a video... it's one of the most beautiful memories we've created together. ❤️✨",
     storyNote: [
