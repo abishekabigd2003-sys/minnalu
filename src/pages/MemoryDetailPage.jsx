@@ -24,15 +24,16 @@ const MemoryDetailPage = () => {
     window.scrollTo(0, 0);
   }, [memory.id]);
 
-  // Play song ONLY AFTER card is scratched and revealed
+  // Play song when card is scratched and revealed
   useEffect(() => {
-    if (isRevealed && memory && memory.songUrl && !memory.videoUrl) {
+    if (isRevealed && memory && memory.songUrl) {
       playTrack(memory.songUrl);
     }
     return () => {
       pauseTrack();
     };
-  }, [isRevealed, memory.id, memory.songUrl, memory.videoUrl]);
+  }, [isRevealed, memory.id, memory.songUrl]);
+
 
   const handleScratchComplete = () => {
     setUnlockedThisSession(true);
@@ -131,7 +132,7 @@ const MemoryDetailPage = () => {
       )}
 
       {/* Embedded Music Player with Prominent Play / Pause Button & Amazon Music Link */}
-      {memory.songUrl && !memory.videoUrl && (
+      {memory.songUrl && (
         <div className="w-full mb-6">
           <MusicPlayer
             songTitle={memory.songTitle || "Oh Shala Oh Shala"}
@@ -146,6 +147,7 @@ const MemoryDetailPage = () => {
         </div>
       )}
     </motion.div>
+
   );
 };
 

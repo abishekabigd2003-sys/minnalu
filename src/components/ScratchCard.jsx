@@ -71,15 +71,21 @@ const ScratchCard = ({ image, videoUrl, songUrl, onScratchComplete, isAlreadyRev
       });
     } catch (e) {}
 
-    // Start playing audio/video ONLY AFTER scratch card is opened and revealed
-    if (songUrl && !videoUrl) {
+    // Unmute & play video automatically on reveal
+    if (videoUrl && videoRef.current) {
+      videoRef.current.muted = false;
+      setIsMuted(false);
+      videoRef.current.play().catch((err) => console.warn("Video play prevented:", err));
+    }
+
+    // Play background song track on reveal
+    if (songUrl) {
       playTrack(songUrl);
-    } else if (videoUrl && videoRef.current) {
-      videoRef.current.play().catch((err) => console.warn(err));
     }
 
     if (onScratchComplete) onScratchComplete();
   };
+
 
   useEffect(() => {
     if (isRevealed) return;
