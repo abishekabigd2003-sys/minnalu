@@ -55,7 +55,7 @@ export const playTrack = async (songUrl) => {
   const audio = getGlobalAudio();
   if (!audio) return;
 
-  const targetUrl = songUrl || '/audio/Oh-Shala.mp3';
+  const targetUrl = songUrl || `${import.meta.env.BASE_URL}audio/Oh-Shala.mp3`;
 
   // If switching to a new song, stop previous song & load new track
   if (currentTrackUrl !== targetUrl) {
@@ -88,7 +88,7 @@ export const pauseTrack = () => {
 };
 
 export const toggleTrack = async (songUrl) => {
-  const targetUrl = songUrl || '/audio/Oh-Shala.mp3';
+  const targetUrl = songUrl || `${import.meta.env.BASE_URL}audio/Oh-Shala.mp3`;
 
   if (currentTrackUrl !== targetUrl) {
     await playTrack(targetUrl);

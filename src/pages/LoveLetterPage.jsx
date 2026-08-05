@@ -12,7 +12,7 @@ const LoveLetterPage = () => {
   // Play audio strictly while viewing the active letter, and stop immediately when closed or leaving page
   useEffect(() => {
     if (isLetterOpen) {
-      playTrack('/audio/hey-minnale.mp3');
+      playTrack(`${import.meta.env.BASE_URL}audio/hey-minnale.mp3`);
     } else {
       pauseTrack();
     }

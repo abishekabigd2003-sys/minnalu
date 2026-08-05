@@ -10,7 +10,7 @@ const FinalEndingPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    playTrack('/audio/hey-minnale.mp3');
+    playTrack(`${import.meta.env.BASE_URL}audio/hey-minnale.mp3`);
     playUnlockSuccessSound();
 
     // Continuous Grand Confetti Cannons

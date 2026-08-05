@@ -57,11 +57,10 @@ const MusicPlayer = ({ songTitle, songArtist, songUrl, amazonMusicUrl, albumArt,
         whileHover={{ scale: 1.03, boxShadow: "0 0 35px rgba(255,215,0,0.7)" }}
         whileTap={{ scale: 0.97 }}
         onClick={handleTogglePlay}
-        className={`w-full py-4 px-6 rounded-2xl border-2 font-serif font-bold text-base md:text-lg flex items-center justify-center space-x-3 cursor-pointer shadow-2xl transition-all duration-300 ${
-          isThisSongPlaying
+        className={`w-full py-4 px-6 rounded-2xl border-2 font-serif font-bold text-base md:text-lg flex items-center justify-center space-x-3 cursor-pointer shadow-2xl transition-all duration-300 ${isThisSongPlaying
             ? 'bg-gradient-to-r from-rose-crimson via-rose-ruby to-rose-glow text-white border-gold shadow-[0_0_30px_rgba(255,46,99,0.8)]'
             : 'bg-gradient-to-r from-gold-dark via-gold to-gold-light text-dark-900 border-white shadow-[0_0_25px_rgba(255,215,0,0.6)]'
-        }`}
+          }`}
       >
         {isThisSongPlaying ? (
           <>
